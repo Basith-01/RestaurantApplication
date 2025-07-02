@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD ORDERING WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li>Foods
+                <ul>
+                    <li><a href="foodimages/pizza2.jpg">Pizza</a></li>
+                    <li><a href="foodimages/dosa3.jpeg">dosa</a></li>
+                    <li><a href="foodimages/samosa3.jpg">Samosa</a></li>
+                    <li><a href="foodimages/cake5.jpg">Cake</a></li>
+                    <li><a href="foodimages/ice cream 2.jpg">Ice-Cream</a></li>
+                </ul>
+            </li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Order</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="container-left">
+            <h1 style="font-style: oblique;"">Lets Eats Together</h1>
+            <p style="font-family: cursive;"">The Best Restaurant</p>
+
+            <br>
+         		<a href="signIn.jsp"><button style="background-color: orange; font-family: cursive;">SignIn</button></a>
+      			<a href="login.jsp"><button style="background-color: green; font-family: cursive;">Login</button></a>
+ <!--     			<button onclick="showPopup('signin')"
+        			style="background-color: orange; font-family: cursive;">Sign In</button>
+				<button onclick="showPopup('login')"
+        			style="background-color: green; font-family: cursive;">Login</button>-->
+
+            <br>
+            <img src="foodimages/eating.png" width="35%" style="margin-top: 5%;">
+        </div>
+        <div class="container-right">
+            <img src="foodimages/hero.png">
+        </div>
+    </div>
+
+   
+    <!-- Featured Food Section -->
+<section class="featured">
+    <h2>Our Popular Dishes</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="foodimages/vada pav 2.jpg" alt="Vada Pav">
+            <p>Vada Pav</p>
+            <p class="price">₹30</p>
+        	<button class="add-to-cart" onclick="addToCart('Vada Pav', 30)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/slider2.jpg" alt="Slider">
+            <p>Mini Burger Slider</p>
+             <p class="price">₹90</p>
+        	 <button class="add-to-cart" onclick="addToCart('Mini Burger Slider', 90)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/jalebi.jpg" alt="Jalebi">
+            <p>Jalebi</p>
+            <p class="price">₹20</p>
+        	<button class="add-to-cart" onclick="addToCart('Jalebi', 20)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/pav bhaji1.jpg" alt="Bhaji">
+            <p>Bhaji</p>
+            <p class="price">₹30</p>
+        	<button class="add-to-cart" onclick="addToCart('Bhaji', 30)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/poha3.jpg" alt="Poha">
+            <p>Delicious Poha</p>
+            <p class="price">₹40</p>
+        	<button class="add-to-cart" onclick="addToCart('Delicious Poha', 40)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/pizza1.jpg" alt="Pizza">
+            <p>Pizza</p>
+            <p class="price">₹100</p>
+        	<button class="add-to-cart" onclick="addToCart('Pizza', 100)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/pasta2.jpg" alt="Pasta">
+            <p>Pasta</p>
+            <p class="price">₹40</p>
+        	<button class="add-to-cart" onclick="addToCart('Pasta', 40)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/dosa3.jpeg" alt="Dosa">
+            <p>Masala Dosa</p>
+            <p class="price">₹30</p>
+        	<button class="add-to-cart" onclick="addToCart('Masala Dosa', 30)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/ice cream 3.jpg" alt="Ice cream">
+            <p>Ice-Cream</p>
+            <p class="price">₹60</p>
+        	<button class="add-to-cart" onclick="addToCart('Ice-Cream', 60)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/dhokla2.jpg" alt="Dhokla">
+            <p>Dhokla</p>
+            <p class="price">₹50</p>
+        	<button class="add-to-cart" onclick="addToCart('Dhokla', 50)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/samosa3.jpg" alt="samosa">
+            <p>Spicy samosa</p>
+            <p class="price">₹30</p>
+        	<button class="add-to-cart" onclick="addToCart('Spicy samosa', 30)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/cake5.jpg" alt="Cake">
+            <p>cake</p>
+            <p class="price">₹250</p>
+        	<button class="add-to-cart" onclick="addToCart('cake', 250)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/chaat1.jpg" alt="Chat">
+            <p>Chat</p>
+            <p class="price">₹35</p>
+        	<button class="add-to-cart" onclick="addToCart('Chat', 35)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/chowmeen 1.jpg" alt="Chowmeen">
+            <p>Chowmeen</p>
+            <p class="price">₹25</p>
+        	<button class="add-to-cart" onclick="addToCart('Chowmeen', 25)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/litti2.jpg" alt="Litti">
+            <p>Litti</p>
+            <p class="price">₹40</p>
+        	<button class="add-to-cart" onclick="addToCart('Litti', 40)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/pastry1.jpg" alt="Pastry">
+            <p>Pastry</p>
+            <p class="price">₹40</p>
+        	<button class="add-to-cart" onclick="addToCart('Pastry', 40)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/cake6.jpg" alt="Cake">
+            <p>Cake</p>
+            <p class="price">₹100</p>
+        	<button class="add-to-cart" onclick="addToCart('Cake', 100)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/dosa1.jpg" alt="Dosa">
+            <p>Dosa</p>
+            <p class="price">₹25</p>
+        	<button class="add-to-cart" onclick="addToCart('Dosa', 25)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/pasta3.jpeg" alt="Pasta">
+            <p>Pasta</p>
+            <p class="price">₹40</p>
+        	<button class="add-to-cart" onclick="addToCart('Pasta', 40)">Add to Cart</button>
+        </div>
+        <div class="gallery-item">
+            <img src="foodimages/samosa4.jpg" alt="Samosa">
+            <p>Samosa</p>
+            <p class="price">₹20</p>
+        	<button class="add-to-cart" onclick="addToCart('Samosa', 20)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <footer>
+    <p>&copy; 2025 FoodieHub. All rights reserved.</p>
+    <p>Follow us:
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
+
+<div id="popup-overlay" style="display:none; position:fixed; top:0; left:0;
+     width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:10000;"></div>
+
+<div id="popup-content" style="display:none; position:fixed; top:50%; left:50%;
+     transform:translate(-50%, -50%); background:white; padding:30px; border-radius:10px; z-index:10001;">
+    <span onclick="closePopup()" style="
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+">X</span>
+
+    <iframe id="popup-frame" style="width:400px; height:400px; border:none;"></iframe>
+</div>
+
+
+
+
+
+
+
+
+
